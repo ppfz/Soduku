@@ -33,7 +33,7 @@
         $username=$_SESSION["username"];
         $succeed=$_SESSION['succeed'];
         print "<p><a id=\"lo\" href=logout.php> LOG OUT</a></p>";
-        print "<p id=\"hello\"> <b> User: $username</b> "."</br> </br> Welcome to Sudoku, you have succeed  <b>$succeed</b> times. Enjoy your game! </p>";
+        print "<p id=\"hello\"> <b> User: $username</b> "."</br> </br> Welcome to Sudoku, you have succeed  <b id=\"succeed\">$succeed</b> times. Enjoy your game! </p>";
         print "<p id=\"p3\"></p>";  // this is to display the 2-D array of the game
         print "<div class = \"btn-group\">";
         print "<button class=\"button button1\" onclick = \"sd.checkRes('" .$username. "', $succeed);\"> Finish </button>";
