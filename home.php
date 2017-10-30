@@ -4,11 +4,7 @@ ob_start();
 
 //connect to database
 $db=mysqli_connect(
-"webprogramming.cmmcedthfueh.us-west-2.rds.amazonaws.com",
-"user",
-"password",
-"db2304998",
-"3306");
+
 
 
 ?>
