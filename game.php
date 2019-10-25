@@ -3,11 +3,7 @@
   $username = $_SESSION["username"];
 
   $con = mysqli_connect(
-        "webprogramming.cmmcedthfueh.us-west-2.rds.amazonaws.com",
-        "user",
-        "password",
-        "db2304998",
-        "3306"
+
      ) or die("Could not connect:" . mysql_error());
 
   $result= mysqli_query ($con, "SELECT * from reg WHERE username='".$username."'");   
